@@ -1,0 +1,40 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.tabs-triggers {
+  display: flex;
+}
+
+.tabs-triggers__item {
+  flex-grow: 1;
+  color: #000000;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+}
+
+.tabs-triggers__item--active {
+  background-color: #eee;
+}
+
+.tabs-content__item {
+  background-color: #eee;
+  padding: 20px;
+  display: none;
+}
+
+.tabs-content__item--active {
+  display: block;
+}
